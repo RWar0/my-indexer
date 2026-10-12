@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" styleClass="mainAnchorFrame" stylesheets="@../styles/mainFormStyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forms.MainFormController">
+   <children>
+      <BorderPane fx:id="borderPaneMain">
+         <left>
+            <AnchorPane fx:id="sideMenuAnchorPane" prefHeight="650.0" prefWidth="200.0" styleClass="sideMenuAnchor" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="versionLabel" layoutX="11.0" layoutY="629.0" prefHeight="18.0" prefWidth="185.0" text="Version: 1.1" textFill="#aba4a4" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="10.0">
+                     <font>
+                        <Font name="Impact" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button contentDisplay="RIGHT" graphicTextGap="20.0" layoutX="9.0" layoutY="27.0" mnemonicParsing="false" onAction="#setDashboard" prefHeight="50.0" prefWidth="150.0" styleClass="sideMenuButton1" text="Pulpit główny" textFill="#007ba1" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="60.0">
+                     <font>
+                        <Font name="Impact" size="21.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#53a8f8" glyphName="DESKTOP" size="20" />
+                     </graphic>
+                     <padding>
+                        <Insets right="-15.0" />
+                     </padding>
+                  </Button>
+                  <Button contentDisplay="RIGHT" graphicTextGap="50.0" layoutX="25.0" layoutY="89.0" mnemonicParsing="false" onAction="#setList" prefHeight="50.0" prefWidth="150.0" styleClass="sideMenuButton1" text="Lista" textFill="#007ba1" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="125.0">
+                     <font>
+                        <Font name="Impact" size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets right="-60.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView fill="#53a8f8" glyphName="LIST_ALT" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="RIGHT" graphicTextGap="35.0" layoutY="221.0" mnemonicParsing="false" onAction="#setCategories" prefHeight="50.0" prefWidth="150.0" styleClass="sideMenuButton1" text="Kategorie" textFill="#007ba1" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="190.0">
+                     <font>
+                        <Font name="Impact" size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets right="-35.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView fill="#53a8f8" glyphName="TH_LARGE" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="RIGHT" graphicTextGap="30.0" layoutX="28.0" layoutY="325.0" mnemonicParsing="false" onAction="#setCalculator" prefHeight="50.0" prefWidth="150.0" styleClass="sideMenuButton1" text="Kalkulator" textFill="#007ba1" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="255.0">
+                     <font>
+                        <Font name="Impact" size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets right="-35.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView fill="#53a8f8" glyphName="CALCULATOR" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="RIGHT" graphicTextGap="30.0" layoutX="28.0" layoutY="393.0" mnemonicParsing="false" onAction="#addProductBtnHandler" prefHeight="50.0" prefWidth="150.0" styleClass="sideMenuButton1" text="Dodawanie" textFill="#007ba1" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="320.0">
+                     <font>
+                        <Font name="Impact" size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets right="-30.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView fill="#53a8f8" glyphName="PLUS_CIRCLE" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="RIGHT" graphicTextGap="15.0" layoutX="38.0" layoutY="403.0" mnemonicParsing="false" onAction="#setMeals" prefHeight="50.0" prefWidth="150.0" styleClass="sideMenuButton1" text="Posiłki" textFill="#007ba1" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="385.0">
+                     <font>
+                        <Font name="Impact" size="21.0" />
+                     </font>
+                     <padding>
+                        <Insets right="-30.0" />
+                     </padding>
+                     <graphic>
+                        <FontAwesomeIconView fill="#53a8f8" glyphName="BOOK" size="20" translateX="27.0" />
+                     </graphic>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin></AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="mainCenterAnchorPane" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

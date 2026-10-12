@@ -1,0 +1,28 @@
+
+.mainAnchorFrame {
+    -fx-background-color: #ecd9e3;
+}
+
+.sideMenuAnchor {
+    -fx-background-color: #ecc3d8;
+    -fx-border-width: 0px 1.3px 0px 0px;
+    -fx-border-color: #f9a6d2;
+}
+
+.sideMenuButton1 {
+    -fx-background-color: #f9f2f5;
+    -fx-background-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #f9a6d2;
+    -fx-border-radius: 10px;
+}
+
+.sideMenuButton1:hover {
+    -fx-background-color: #fcb5f8;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.sideMenuButton1:pressed {
+    -fx-background-color: #f794f2;
+}

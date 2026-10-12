@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forms.CalculatorFormController">
+   <children>
+      <TabPane prefHeight="650.0" prefWidth="800.0" styleClass="myTabs" stylesheets="@../styles/calculatorFormStyles.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Kalkulator z listy">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" styleClass="textLabels" stylesheets="@../styles/calculatorFormStyles.css" text="Wybierz produkt z listy:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="120.0" styleClass="additionalLabels" stylesheets="@../styles/calculatorFormStyles.css" text="Podaj gramature:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="120.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="210.0" styleClass="textLabels" stylesheets="@../styles/calculatorFormStyles.css" text="Ladunek glikemiczny dla " AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="210.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="gramsLabel" layoutX="360.0" layoutY="210.0" styleClass="textLabels" stylesheets="@../styles/calculatorFormStyles.css" text=".......g" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="210.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="450.0" layoutY="210.0" styleClass="additionalLabels" stylesheets="@../styles/calculatorFormStyles.css" text="=&gt;" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="210.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="glycLoadLabel" layoutX="500.0" layoutY="210.0" styleClass="additionalLabels2" stylesheets="@../styles/calculatorFormStyles.css" text="1234" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="210.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="statusLabel1" alignment="CENTER" layoutX="211.0" layoutY="349.0" prefHeight="44.0" prefWidth="426.0" text="Niski / Sredni / Wysoki" textFill="RED" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="349.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="37.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="productList" layoutX="339.0" layoutY="37.0" prefHeight="41.0" prefWidth="212.0" styleClass="myRollDown1" stylesheets="@../styles/calculatorFormStyles.css" AnchorPane.leftAnchor="350.0" />
+                        <TextField fx:id="gramsTextField" layoutX="268.0" layoutY="117.0" prefHeight="40.0" prefWidth="215.0" styleClass="myTextField1" stylesheets="@../styles/calculatorFormStyles.css" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="120.0">
+                           <font>
+                              <Font name="Georgia" size="20.0" />
+                           </font></TextField>
+                        <Label layoutX="468.0" layoutY="123.0" styleClass="additionalLabels" stylesheets="@../styles/calculatorFormStyles.css" text="gram" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="120.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Kalkulator z danych">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="34.0" layoutY="47.0" styleClass="additionalLabels3" stylesheets="@../styles/calculatorFormStyles.css" text="Indeks glikemiczny:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="114.0" styleClass="textLabels" stylesheets="@../styles/calculatorFormStyles.css" text="Weglowodany" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="115.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="161.0" styleClass="textLabels" stylesheets="@../styles/calculatorFormStyles.css" text="Blonnik" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="165.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="383.0" layoutY="144.0" styleClass="additionalLabels" stylesheets="@../styles/calculatorFormStyles.css" text="lub" AnchorPane.rightAnchor="380.0" AnchorPane.topAnchor="140.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="460.0" layoutY="114.0" styleClass="textLabels" stylesheets="@../styles/calculatorFormStyles.css" text="Weglowodany" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="125.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="468.0" layoutY="154.0" styleClass="textLabels" stylesheets="@../styles/calculatorFormStyles.css" text="Przyswajalne" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="155.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="40.0" layoutY="335.0" styleClass="textLabels" stylesheets="@../styles/calculatorFormStyles.css" text="Ladunek glikemiczny dla " AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="335.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="grams2Label" layoutX="360.0" layoutY="335.0" styleClass="textLabels" stylesheets="@../styles/calculatorFormStyles.css" text=".......g" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="335.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="450.0" layoutY="335.0" styleClass="additionalLabels" stylesheets="@../styles/calculatorFormStyles.css" text="=&gt;" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="335.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="glycLoad2Label" layoutX="510.0" layoutY="335.0" styleClass="additionalLabels2" stylesheets="@../styles/calculatorFormStyles.css" text="........" AnchorPane.leftAnchor="510.0" AnchorPane.topAnchor="335.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="glycIxTextField" layoutX="303.0" layoutY="40.0" prefHeight="0.0" prefWidth="195.0" styleClass="myTextField1" stylesheets="@../styles/calculatorFormStyles.css" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="340.0">
+                           <font>
+                              <Font name="Georgia" size="20.0" />
+                           </font></TextField>
+                        <TextField fx:id="carboTextField" layoutX="226.0" layoutY="114.0" prefHeight="6.0" prefWidth="123.0" styleClass="myTextField1" stylesheets="@../styles/calculatorFormStyles.css" AnchorPane.leftAnchor="225.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="115.0">
+                           <font>
+                              <Font name="Georgia" size="20.0" />
+                           </font></TextField>
+                        <TextField fx:id="fiberTextField" layoutX="147.0" layoutY="161.0" prefHeight="0.0" prefWidth="201.0" styleClass="myTextField1" stylesheets="@../styles/calculatorFormStyles.css" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="165.0">
+                           <font>
+                              <Font name="Georgia" size="20.0" />
+                           </font></TextField>
+                        <TextField fx:id="digestibleTextField" layoutX="648.0" layoutY="131.0" prefHeight="0.0" prefWidth="138.0" styleClass="myTextField1" stylesheets="@../styles/calculatorFormStyles.css" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="140.0">
+                           <font>
+                              <Font name="Georgia" size="20.0" />
+                           </font></TextField>
+                        <TextField fx:id="grams2TextField" layoutX="264.0" layoutY="251.0" prefHeight="0.0" prefWidth="140.0" styleClass="myTextField1" stylesheets="@../styles/calculatorFormStyles.css" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="245.0">
+                           <font>
+                              <Font name="Georgia" size="20.0" />
+                           </font></TextField>
+                        <Label layoutX="40.0" layoutY="245.0" styleClass="additionalLabels" stylesheets="@../styles/calculatorFormStyles.css" text="Podaj gramature:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="245.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="statusLabel2" alignment="CENTER" layoutX="179.0" layoutY="454.0" prefHeight="44.0" prefWidth="426.0" text="Niski / Sredni / Wysoki" textFill="RED" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="460.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="37.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="424.0" layoutY="246.0" styleClass="additionalLabels" stylesheets="@../styles/calculatorFormStyles.css" text="gram" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="245.0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

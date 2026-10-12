@@ -1,0 +1,99 @@
+.textLabels {
+    -fx-text-fill: #0033ff;
+}
+
+.additionalLabels {
+    -fx-text-fill: #cc00cc;
+}
+
+.additionalLabels2 {
+    -fx-text-fill: #000099;
+}
+
+.additionalLabels3 {
+    -fx-text-fill: red;
+}
+
+.myTextField1 {
+    -fx-background-color: #f9feff;
+    -fx-background-radius: 25px;
+    -fx-border-width: 1.3px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #deaae3;
+}
+
+.myTextField1:hover {
+    -fx-background-color: #cbe8eb;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.myTextField1:focused {
+    -fx-background-color: #e8fdff;
+}
+
+.myRollDown1 {
+    -fx-background-color: #abd7ff;
+    -fx-background-radius: 25px;
+    -fx-border-width: 1.3px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #4f9be0;
+    
+    -fx-font-family: Consolas;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.myRollDown1:hover {
+    -fx-background-color: #81bef4;
+    -fx-scale-x: 1.01;
+    -fx-scale-y: 1.01;
+}
+
+.myRollDown1:pressed {
+    -fx-background-color: #55a9f4;
+}
+
+.myTabs .tab-header-area .tab-header-background {
+    -fx-background-color: #ec99c3;
+    -fx-padding: 5px;
+}
+
+.myTabs .tab-header-area {
+    -fx-padding: 8px 0px 0px 10px;
+}
+
+.myTabs .tab:selected {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.myTabs .tab {
+    -fx-background-insets: 0 5 0 5;
+    -fx-border-insets: 0 5 0 5;
+    
+    -fx-background-color: #ec94ea;
+    -fx-background-radius: 16px 16px 0px 0px;
+    -fx-font-family: consolas;
+    -fx-border-width: 1.1px 1.1px 0px 1.1px;
+    -fx-border-color: #953b93;
+    -fx-border-radius: 16px 16px 0px 0px;
+    
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    
+}
+
+.myTabs .tab:selected {
+    -fx-background-color: #cd60ff;
+    -fx-border-color: #8d42af;
+}
+
+.myTabs .tab:hover {
+    -fx-background-color: #e567e2;
+    -fx-scale-x: 1.01;
+    -fx-scale-y: 1.01;
+}

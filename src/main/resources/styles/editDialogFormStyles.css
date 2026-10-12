@@ -1,0 +1,105 @@
+.editFormAnchor {
+    -fx-background-color: #ecd9e3;
+}
+
+.textLabels {
+    -fx-text-fill: #0033ff;
+}
+
+.additionalLabels {
+    -fx-text-fill: #cc00cc;
+}
+
+.addButton {
+    -fx-background-color: #33ff33;
+    -fx-background-radius: 35px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 35px;
+    -fx-border-color: #009900;
+}
+
+.addButton:hover {
+    -fx-background-color: #88ff94;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.addButton:pressed {
+    -fx-background-color: #22c322;
+}
+
+.addButton2 {
+    -fx-background-color: #2adeb7;
+    -fx-background-radius: 35px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 35px;
+    -fx-border-color: #1a9a7f;
+}
+
+.addButton2:hover {
+    -fx-background-color: #5bffdb;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.addButton2:pressed {
+    -fx-background-color: #1fb7a1;
+}
+
+.cancelButton {
+    -fx-background-color: #e0d560;
+    -fx-background-radius: 35px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 35px;
+    -fx-border-color: #9b881f;
+}
+
+.cancelButton:hover {
+    -fx-background-color: #f9be3b;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.cancelButton:pressed {
+    -fx-background-color: #f9733b;
+}
+
+.myTextField {
+    -fx-background-color: #f9feff;
+    -fx-background-radius: 25px;
+    -fx-border-width: 1.3px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #deaae3;
+}
+
+.myTextField:hover {
+    -fx-background-color: #cbe8eb;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.myTextField:focused {
+    -fx-background-color: #e8fdff;
+}
+
+.myRollDown {
+    -fx-background-color: #abd7ff;
+    -fx-background-radius: 25px;
+    -fx-border-width: 1.3px;
+    -fx-border-radius: 25px;
+    -fx-border-color: #4f9be0;
+    
+    -fx-font-family: Consolas;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.myRollDown:hover {
+    -fx-background-color: #81bef4;
+    -fx-scale-x: 1.01;
+    -fx-scale-y: 1.01;
+}
+
+.myRollDown:pressed {
+    -fx-background-color: #55a9f4;
+}

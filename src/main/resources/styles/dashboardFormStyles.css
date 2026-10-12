@@ -1,0 +1,25 @@
+.dashboardPane {
+    -fx-background-color: #f9e5ed;
+    -fx-background-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-border-color: #edafc9;
+    -fx-border-radius: 10px;
+}
+
+.dashboardButton1 {
+    -fx-background-color: #f9f2f5;
+    -fx-background-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #f9a6d2;
+    -fx-border-radius: 10px;
+}
+
+.dashboardButton1:hover {
+    -fx-background-color: #fcb5f8;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.dashboardButton1:pressed {
+    -fx-background-color: #f794f2;
+}
